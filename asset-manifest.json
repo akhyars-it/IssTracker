@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/IssTracker/static/css/main.c21aefad.css",
+    "main.js": "/IssTracker/static/js/main.b4c557fd.js",
+    "static/js/453.aee39e03.chunk.js": "/IssTracker/static/js/453.aee39e03.chunk.js",
+    "index.html": "/IssTracker/index.html",
+    "main.c21aefad.css.map": "/IssTracker/static/css/main.c21aefad.css.map",
+    "main.b4c557fd.js.map": "/IssTracker/static/js/main.b4c557fd.js.map",
+    "453.aee39e03.chunk.js.map": "/IssTracker/static/js/453.aee39e03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c21aefad.css",
+    "static/js/main.b4c557fd.js"
+  ]
+}
