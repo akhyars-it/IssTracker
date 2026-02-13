@@ -11,7 +11,7 @@ function App() {
 
   const updateISS = async () => {
     try {
-      const res = await fetch('http://api.open-notify.org/iss-now.json');
+      const res = await fetch('https://api.wheretheiss.at/v1/satellites/25544');
       const json = await res.json();
       const lat = parseFloat(json.iss_position.latitude);
       const lng = parseFloat(json.iss_position.longitude);
@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     updateISS();
     const fetchCrew = async () => {
-      const res = await fetch('http://api.open-notify.org/astros.json');
+      const res = await fetch('https://api.wheretheiss.at/v1/satellites/25544');
       const json = await res.json();
       setCrew(json.people.filter(p => p.craft === 'ISS'));
     };
