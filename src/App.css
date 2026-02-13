@@ -1,0 +1,41 @@
+body, html, #root {
+  margin: 0; padding: 0; background: #000; overflow: hidden;
+}
+
+.App {
+  width: 100vw; height: 100vh; position: relative;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.hud {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 280px;
+  background: rgba(5, 10, 20, 0.9);
+  backdrop-filter: blur(10px);
+  border-right: 5px solid #00d2ff;
+  padding: 20px;
+  color: #00d2ff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+  text-align: right;
+  pointer-events: auto; /* Makes sure you can scroll the crew list */
+}
+
+.status-header { display: flex; align-items: center; justify-content: flex-end; gap: 8px; font-size: 0.7rem; letter-spacing: 2px; }
+.pulse { width: 8px; height: 8px; border-radius: 50%; background: #00ff00; box-shadow: 0 0 8px #00ff00; animation: blink 2s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+
+h1 { font-size: 1.1rem; border-bottom: 1px solid #1a3a5a; padding-bottom: 10px; margin: 10px 0; letter-spacing: 3px; }
+.city { color: white; font-size: 1.3rem; margin: 15px 0; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+.box { background: rgba(255,255,255,0.05); padding: 8px; text-align: center; border: 1px solid rgba(0, 210, 255, 0.1); }
+.box small { font-size: 0.55rem; color: #888; display: block; }
+.box p { margin: 5px 0 0 0; font-size: 0.9rem; color: white; }
+.crew { border-top: 1px solid #1a3a5a; padding-top: 15px; }
+h3 { font-size: 0.75rem; color: #888; margin-bottom: 10px; }
+ul { list-style: none; padding: 0; margin: 0; max-height: 120px; overflow-y: auto; text-align: right; }
+li { font-size: 0.8rem; padding: 4px 0; color: #ddd; border-bottom: 1px solid #111; }
+
+.footer { margin-top: 15px; font-size: 0.6rem; color: #ffcc00; letter-spacing: 1px; }
